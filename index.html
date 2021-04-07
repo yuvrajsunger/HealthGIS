@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Health GIS</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="css/leaflet/leaflet.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="script/leaflet.js"></script>
+        <script src="script/jquery-3.5.1.js"></script>
+    </head>
+    <body>
+        <div id="map"></div>
+        <div id="text">
+            <h1 id="slum_name">Slum Name</h1>
+            <h2 id="zone">Slum Zone</h2>
+            <table>
+                <tr>
+                    <th>Attribute</th>
+                    <th>Value</th>
+                </tr>
+                <tr>
+                    <td>Population</td>
+                    <td id="pop"></td>
+                </tr>
+                <tr>
+                    <td>No. of Households</td>
+                    <td id="households"></td>
+                </tr>
+                <tr>
+                    <td>Nearest Primary Healthcare Centre</td>
+                    <td id="near_PHC"></td>
+                </tr>
+                <tr>
+                    <td>Nearest Mohalla Clinic</td>
+                    <td id="near_AAMC"></td>
+                </tr>
+                <tr>
+                    <td>Nearest Refferal Facility</td>
+                    <td id="near_refferal"></td>
+                </tr>
+                <tr>
+                    <td>Nearest Immunization Facility</td>
+                    <td id="near_immunization"></td>
+                </tr>
+                <tr>
+                    <td>Nearest Delivery Facility</td>
+                    <td id="near_delivery"></td>
+                </tr>
+                <tr>
+                    <td>Nearest Sterilization Facility</td>
+                    <td id="near_sterilization"></td>
+                </tr>
+                <tr>
+                    <td>Nearest DOTS Centre</td>
+                    <td id="near_DOTS"></td>
+                </tr>
+            </table>
+        </div>
+        <script src="script/mapscript.js"></script>
+    </body>
+</html>
