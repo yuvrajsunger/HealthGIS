@@ -36,6 +36,28 @@ table {
     margin-right: auto;
 }
 
-  #slum_name, #zone {
-      text-align: center;
-  }
+#slum_name, #zone {
+    text-align: center;
+}
+
+.legend {
+padding: 6px 8px;
+background-color: rgba(144, 238, 144, 0.7);
+box-shadow: 0 0 15px rgba(0,0,0,0.2);
+border-radius: 5px;
+line-height: 15px;
+}
+
+.legend img {
+    float: left;
+    margin-right: 8px;
+}
+
+.legend h3 {
+    text-align: center;
+    font-size: 18px;
+}
+
+div.legend.leaflet-control br {
+clear: both;
+}

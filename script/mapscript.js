@@ -128,3 +128,15 @@ $.getJSON("data/PHC_locations.geojson", function(data){
         .addTo(map);
     })
 });
+
+var legend = L.control({position: "bottomleft"})
+legend.onAdd = function(map) {
+    var div = L.DomUtil.create("div", "legend");
+    div.innerHTML = '<h3><b>Legend</b></h3><br>' + 
+        '<img src="css/leaflet/images/marker-icon.png">' +
+        '<p>Slum Location</p><br>' +
+        '<img src="icons/health.png" width="30" height="30">' +
+        '<p>Primary Health Care Centre</p>';
+    return div;
+};
+legend.addTo(map);
