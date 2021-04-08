@@ -129,6 +129,18 @@ $.getJSON("data/PHC_locations.geojson", function(data){
     })
 });
 
+$.getJSON("data/Delhi_Boundary.geojson", function(data) {
+    L.geoJSON(data, {
+        style: {
+            color: 'black',
+            weight: 1,
+            fillColor: 'lightblue',
+            fillOpacity: 0.3,
+            interactive: false
+        }
+    }).addTo(map);
+});
+
 var legend = L.control({position: "bottomleft"})
 legend.onAdd = function(map) {
     var div = L.DomUtil.create("div", "legend");
